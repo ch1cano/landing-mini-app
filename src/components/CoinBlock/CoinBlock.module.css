@@ -3,10 +3,9 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	height: 100%;
-	width: 100%;
 	background-color: black;
-	padding: 0 80px;
+	padding: 0 80px 150px 80px;
+	position: relative;
 }
 
 .info {
@@ -49,6 +48,7 @@
 	width: 100%;
 	max-width: 1280px;
 	padding: 80px;
+	position: relative;
 	margin-top: -5px;
 }
 .cardsHeader {
@@ -105,4 +105,22 @@
 	font-weight: 500;
 	line-height: 24px;
 	cursor: pointer;
+}
+
+.bigStar {
+	position: absolute;
+	bottom: -25%;
+	left: 10%;
+}
+
+.smallStar {
+	position: absolute;
+	bottom: -8%;
+	right: 10%;
+}
+
+.blueStar {
+	position: absolute;
+	bottom: -28%;
+	right: -13%;
 }

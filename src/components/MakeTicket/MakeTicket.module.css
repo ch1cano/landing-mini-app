@@ -21,8 +21,10 @@
 
 .cards {
 	display: flex;
-	width: 100%;
+	max-width: 1280px;
 	gap: 20px;
+	align-items: start;
+	justify-content: start;
 }
 
 .card {
@@ -62,6 +64,11 @@
 	display: flex;
 	align-items: center;
 	gap: 16px;
+	position: relative;
+
+	align-items: center;
+	justify-content: center;
+	padding-top: 80px;
 }
 
 .arrow {
@@ -69,4 +76,16 @@
 	border-radius: 50px;
 	background: #212121;
 	cursor: pointer;
+}
+
+.bigStar {
+	position: absolute;
+	bottom: -75%;
+	left: -350%;
+}
+
+.smallStar {
+	position: absolute;
+	bottom: -48%;
+	right: -410%;
 }

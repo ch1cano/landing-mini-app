@@ -2,6 +2,8 @@ import s from "./MakeTicket.module.css";
 import question from "../../assets/quest.png";
 import left from "../../assets/arrowLeft.svg";
 import right from "../../assets/arrowRight.svg";
+import star from "../../assets/greenStar.svg";
+
 export const MakeTicket = () => {
 	return (
 		<div className={s.wrapper}>
@@ -26,6 +28,8 @@ export const MakeTicket = () => {
 				<div className={s.arrow}>
 					<img src={right} />
 				</div>
+				<img className={s.bigStar} src={star} alt="" />
+				<img width={66} className={s.smallStar} src={star} alt="" />
 			</div>
 		</div>
 	);

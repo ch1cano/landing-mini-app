@@ -5,6 +5,8 @@ import bg from "../../assets/bg.png";
 import cube from "../../assets/cube.png";
 import top from "../../assets/topCard.svg";
 import bot from "../../assets/botCard.svg";
+import star from "../../assets/greenStar.svg";
+import starBlue from "../../assets/blueStar.svg";
 import { useState } from "react";
 
 export const CoinBlock = () => {
@@ -66,6 +68,12 @@ export const CoinBlock = () => {
 						BUY $??? (SOON)
 					</button>
 				</div>
+
+				<img className={s.bigStar} src={star} alt="" />
+
+				<img width={66} className={s.smallStar} src={star} alt="" />
+
+				<img className={s.blueStar} src={starBlue} alt="" />
 			</div>
 		</div>
 	);
