@@ -24,7 +24,9 @@ export const CoinBlock = () => {
 	return (
 		<div className={s.wrapper}>
 			<div className={s.info}>
-				<p>HOW IT WORKS X TG</p>
+				<p>HOW IT WORKS</p>
+				<p>X</p>
+				<p>TG</p>\
 			</div>
 			<div className={s.header}>
 				<img src={big} alt="???" />

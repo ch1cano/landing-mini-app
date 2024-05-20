@@ -74,7 +74,11 @@ export const Home = () => {
 			</div>
 			<div className={s.info}>
 				<img src={x} alt="x" />
-				<p>HOW IT WORKS X TG</p>
+				<div className={s.infoText}>
+					<p>HOW IT WORKS</p>
+					<p>X</p>
+					<p>TG</p>
+				</div>
 			</div>
 		</div>
 	);

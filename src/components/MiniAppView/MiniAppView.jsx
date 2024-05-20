@@ -8,8 +8,8 @@ export const MiniAppView = () => {
 	return (
 		<div className={s.wrapper}>
 			<div className={s.title}>
-				In a world where every phenomenon has its coin, it’s time for the
-				community to decide <span>what should come next.</span>
+				In a world where every phenomenon has<br />its coin, it’s time for the
+				community to decide<br /> <span>what should come next.</span>
 			</div>
 			<div className={s.phoneBlock}>
 				<img src={miniApp} alt="minApp" />
