@@ -26,11 +26,11 @@ export const CoinBlock = () => {
 			<div className={s.info}>
 				<p>HOW IT WORKS</p>
 				<p>X</p>
-				<p>TG</p>\
+				<p>TG</p>
 			</div>
 			<div className={s.header}>
-				<img src={big} alt="???" />
-				<img src={small} alt="???" />
+				<img className={s.logoBig} src={big} alt="???" />
+				<img className={s.logoSmal} src={small} alt="???" />
 			</div>
 			<div className={s.bg}>
 				<img src={bg} alt="???" />
@@ -70,12 +70,13 @@ export const CoinBlock = () => {
 						BUY $??? (SOON)
 					</button>
 				</div>
+				<div className={s.forMedia}>
+					<img className={s.bigStar} src={star} alt="" />
 
-				<img className={s.bigStar} src={star} alt="" />
+					<img width={66} className={s.smallStar} src={star} alt="" />
 
-				<img width={66} className={s.smallStar} src={star} alt="" />
-
-				<img className={s.blueStar} src={starBlue} alt="" />
+					<img className={s.blueStar} src={starBlue} alt="" />
+				</div>
 			</div>
 		</div>
 	);
