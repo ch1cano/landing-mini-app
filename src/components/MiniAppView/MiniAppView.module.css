@@ -36,6 +36,7 @@
   background-position: center;
   background-size: 50%;
   position: relative;
+  z-index: 99;
 }
 
 .phone {
@@ -94,4 +95,40 @@
   position: absolute;
   top: 50%;
   right: 25%;
+}
+
+.starGreen {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+
+.starAzure {
+  position: absolute;
+  top: 28%;
+  right: 30%;
+}
+
+.starBlue {
+  position: absolute;
+  top: 12%;
+  right: 35%;
+}
+
+.starAzure2 {
+  position: absolute;
+  top: 0;
+  left: 37.5%;
+}
+
+.starGreen2 {
+  position: absolute;
+  top: 25%;
+  left: 31%;
+}
+
+.starBlue2 {
+  position: absolute;
+  top: 15%;
+  left: 23%;
 }
