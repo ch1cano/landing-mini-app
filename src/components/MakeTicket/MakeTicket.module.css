@@ -58,6 +58,7 @@
   padding: 24px 44px;
   border-radius: 100px;
   cursor: pointer;
+  border: none;
 }
 
 .swiper {
