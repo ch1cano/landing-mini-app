@@ -28,9 +28,9 @@ export const MakeTicket = () => {
 				<div className={s.arrow}>
 					<img src={right} />
 				</div>
-				<img className={s.bigStar} src={star} alt="" />
 				<img width={66} className={s.smallStar} src={star} alt="" />
 			</div>
+			<img className={s.bigStar} src={star} alt="" />
 		</div>
 	);
 };

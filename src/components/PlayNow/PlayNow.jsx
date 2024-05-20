@@ -3,6 +3,9 @@ import tap from "../../assets/tapPlus.png";
 import x from "../../assets/x.png";
 import question from "../../assets/question.png";
 import abc from "../../assets/abc.png";
+import starBlue from "../../assets/blueStar.svg";
+import starGreen from "../../assets/greenStar.svg";
+import starAzure from "../../assets/azure-star.svg";
 
 export const PlayNow = () => {
 	return (
@@ -39,6 +42,13 @@ export const PlayNow = () => {
 				</div>
 			</div>
 			<button className={s.button}>Play Now</button>
+			<img className={s.blueStar} src={starBlue} alt="" />
+			<img className={s.greenStar} width={66} src={starGreen} alt="" />
+			<img className={s.greenStar2} width={66} src={starGreen} alt="" />|
+			<img className={s.blueStar2} src={starBlue} alt="" />starAzure
+			<img className={s.starAzure} src={starAzure} alt="" width={66} />
+			<img className={s.starAzure2} src={starAzure} alt="" width={46} />
+			<img className={s.starAzure3} src={starAzure} alt="" width={46} />
 		</div>
 	);
 };

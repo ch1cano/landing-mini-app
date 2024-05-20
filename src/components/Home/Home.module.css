@@ -100,7 +100,7 @@
   height: 711.6px;
   border-radius: 2000px;
   background: linear-gradient(to right, #00f0ff 0%, #00ff75 100%);
-
+  position: relative;
   overflow: hidden;
 }
 
@@ -124,14 +124,14 @@
 
 .rocket {
   position: absolute;
-  bottom: -8%;
-  right: -55px;
+  bottom: -50px;
+  right: -30px;
 }
 .info {
   padding: 36px 75px 36px 0;
   display: flex;
   width: 100%;
-  max-width: 1180px;
+  width: 1280px;
   justify-content: space-between;
 }
 
