@@ -9,22 +9,22 @@
   padding: 80px;
 }
 
-.title {
+.titleBlock {
   text-align: center;
   font-size: 56px;
   font-weight: 600;
   color: #fff;
   padding: 0px 108px;
   max-width: 1223px;
-  padding-bottom: 80px;
 }
 
 .cards {
   display: flex;
-  max-width: 1280px;
   gap: 20px;
-  align-items: start;
-  justify-content: start;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  width: 100%;
 }
 
 .card {
@@ -61,7 +61,7 @@
   border: none;
 }
 
-.swiper {
+.navigation {
   display: flex;
   align-items: center;
   width: 100%;
@@ -70,7 +70,6 @@
 
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
 }
 
 .arrow {
@@ -90,4 +89,117 @@
   position: absolute;
   bottom: -48%;
   right: 10%;
+}
+
+.swiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardSlide {
+  width: 964px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid #00ff75;
+  /* border-image: linear-gradient(to bottom, #00f0ff, #00ff75);
+  border-image-slice: 1; */
+  border-radius: 56px;
+  padding: 80px;
+  gap: 56px;
+  margin-top: 25px;
+}
+
+.textBlock {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  padding: 0;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: start;
+  align-items: flex-start;
+  color: #00ffb2;
+  white-space: nowrap;
+}
+
+.description {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.bottomBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.avatarsBlock {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.count {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.joinBtn {
+  padding: 24px 44px 24px 44px;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #00ff75;
+  border: none;
+  line-height: 24px;
+}
+
+.cardSlideEnd {
+  width: 964px;
+  height: 608px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 56px;
+  padding: 60px;
+  gap: 56px;
+  margin-top: 25px;
+  background: linear-gradient(102.71deg, #00f0ff 0%, #00ff75 100%);
+}
+
+.cardSlideEnd span {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 56px;
+}
+
+.btnBlock {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.createBtn {
+  padding: 24px 44px 24px 44px;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  line-height: 24px;
 }

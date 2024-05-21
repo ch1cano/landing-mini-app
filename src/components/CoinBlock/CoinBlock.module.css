@@ -441,6 +441,7 @@
   .cardBtn button {
     padding: 12px 26px;
     font-size: 13px;
+    white-space: nowrap;
   }
   .info {
     display: flex;
@@ -496,69 +497,7 @@
   .cardBtn button {
     padding: 8px 5px;
     font-size: 12px;
-  }
-  .info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    padding: 37px 0px 110px 0px;
-  }
-}
-
-@media (max-width: 540px) {
-  .card {
-    max-width: 700px;
-    max-height: 250px;
-    gap: 10px;
-    border-radius: 60px;
-  }
-  .count {
-    font-size: 35px;
-  }
-  .cardItem {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-  }
-  .bg {
-    display: none;
-  }
-
-  .top {
-    width: 50px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-  }
-  .bot {
-    width: 50px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-  }
-  .logoBig {
-    height: 50px;
-  }
-  .logoSmal {
-    height: 50px;
-  }
-  .header {
-    padding-bottom: 90px;
-  }
-  .info {
-    padding: 37px 0 130px 0px;
-  }
-  .forMedia {
-    display: none;
-  }
-  .info p {
-    font-size: 14px;
-  }
-  .cardBtn button {
-    padding: 12px 26px;
-    font-size: 12px;
-  }
-  .cardBtn img {
-    width: 30px;
+    white-space: nowrap;
   }
   .info {
     display: flex;
@@ -619,6 +558,9 @@
   .cardBtn button {
     padding: 12px 26px;
     font-size: 12px;
+    height: 50px;
+    width: 150px;
+    white-space: nowrap;
   }
   .cardBtn img {
     width: 30px;
