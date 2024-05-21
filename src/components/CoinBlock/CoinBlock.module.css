@@ -1,11 +1,14 @@
 .wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	background-color: black;
-	padding: 0 80px 150px 80px;
-	position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 0 80px 150px 80px;
+  position: relative;
+  margin: 0;
+
 }
 
 .info {
@@ -404,6 +407,7 @@
 }
 
 @media (max-width: 668px) {
+
 	.card {
 		max-width: 700px;
 		max-height: 300px;
@@ -521,6 +525,7 @@
 		width: fit-content;
 		padding: 37px 0px 110px 0px;
 	}
+
 }
 
 @media (max-width: 420px) {
