@@ -206,6 +206,10 @@
 		padding: 56px 125px;
 		gap: 40px;
 	}
+	.rocket {
+		bottom: -100px;
+		right: -39px;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -252,8 +256,9 @@
 	.rocket img {
 		width: 100px;
 	}
+
 	.rocket {
-		bottom: -50px;
+		bottom: -100px;
 		right: -20px;
 	}
 }

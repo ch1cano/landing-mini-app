@@ -42,13 +42,16 @@ export const PlayNow = () => {
 				</div>
 			</div>
 			<button className={s.button}>Play Now</button>
-			<img className={s.blueStar} src={starBlue} alt="" />
-			<img className={s.greenStar} width={66} src={starGreen} alt="" />
-			<img className={s.greenStar2} width={66} src={starGreen} alt="" />|
-			<img className={s.blueStar2} src={starBlue} alt="" />starAzure
-			<img className={s.starAzure} src={starAzure} alt="" width={66} />
-			<img className={s.starAzure2} src={starAzure} alt="" width={46} />
-			<img className={s.starAzure3} src={starAzure} alt="" width={46} />
+			<div className={s.wrapperStars}>
+				<img className={s.blueStar} src={starBlue} alt="" />
+				<img className={s.greenStar} width={66} src={starGreen} alt="" />
+				<img className={s.greenStar2} width={66} src={starGreen} alt="" />|
+				<img className={s.blueStar2} src={starBlue} alt="" />
+				starAzure
+				<img className={s.starAzure} src={starAzure} alt="" width={66} />
+				<img className={s.starAzure2} src={starAzure} alt="" width={46} />
+				<img className={s.starAzure3} src={starAzure} alt="" width={46} />
+			</div>
 		</div>
 	);
 };
