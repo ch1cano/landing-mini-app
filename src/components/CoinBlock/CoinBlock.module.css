@@ -6,6 +6,7 @@
   background-color: black;
   padding: 0 80px 150px 80px;
   position: relative;
+  margin: 0;
 }
 
 .info {
@@ -457,8 +458,6 @@
 
 @media (max-width: 540px) {
   .card {
-    max-width: 700px;
-    max-height: 250px;
     gap: 10px;
     border-radius: 100px;
   }
