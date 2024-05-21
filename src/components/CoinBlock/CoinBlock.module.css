@@ -50,7 +50,7 @@
   max-width: 1280px;
   padding: 80px;
   position: relative;
-  margin-top: -5px;
+  margin-top: -10px;
 }
 .cardsHeader {
   display: flex;
@@ -66,6 +66,7 @@
   gap: 4px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .count {
@@ -106,6 +107,7 @@
   font-weight: 500;
   line-height: 24px;
   cursor: pointer;
+  border: none;
 }
 
 .bigStar {
@@ -124,4 +126,450 @@
   position: absolute;
   bottom: -28%;
   right: 0;
+}
+
+@media (max-width: 1680px) {
+  .card {
+    max-width: 1100px;
+    max-height: 600px;
+    margin-top: -10px;
+    gap: 50px;
+  }
+  .count {
+    font-size: 96px;
+  }
+  .cardItem {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 54px;
+  }
+  .top {
+    width: 130px;
+  }
+  .bot {
+    width: 130px;
+  }
+  .logoBig {
+    height: 130px;
+  }
+  .logoSmal {
+    height: 130px;
+  }
+  .cardBtn button {
+    padding: 20px 40px;
+    font-size: 14px;
+  }
+  .info p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .card {
+    max-width: 1000px;
+    max-height: 550px;
+    margin-top: -20px;
+    gap: 40px;
+    border-radius: 800px;
+  }
+  .count {
+    font-size: 86px;
+  }
+  .cardItem {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+  }
+  .top {
+    width: 120px;
+  }
+  .bot {
+    width: 120px;
+  }
+  .logoBig {
+    height: 120px;
+  }
+  .logoSmal {
+    height: 120px;
+  }
+  .cardBtn button {
+    padding: 16px 36px;
+    font-size: 13px;
+  }
+  .info p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1135px) {
+  .card {
+    max-width: 900px;
+    max-height: 500px;
+    margin-top: -20px;
+    gap: 30px;
+    border-radius: 700px;
+  }
+  .count {
+    font-size: 76px;
+  }
+  .cardItem {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 34px;
+  }
+  .bg {
+    display: none;
+  }
+  .top {
+    width: 100px;
+  }
+  .bot {
+    width: 100px;
+  }
+  .logoBig {
+    height: 100px;
+  }
+  .logoSmal {
+    height: 100px;
+  }
+  .header {
+    padding-bottom: 100px;
+  }
+  .info {
+    padding: 37px 0 207px 0px;
+  }
+  .forMedia {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    max-width: 800px;
+    max-height: 400px;
+    margin-top: -20px;
+    gap: 40px;
+    border-radius: 500px;
+  }
+  .count {
+    font-size: 66px;
+  }
+  .cardItem {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  .bg {
+    display: none;
+  }
+  .top {
+    width: 100px;
+  }
+  .bot {
+    width: 100px;
+  }
+  .logoBig {
+    height: 100px;
+  }
+  .logoSmal {
+    height: 100px;
+  }
+  .header {
+    padding-bottom: 100px;
+  }
+  .info {
+    padding: 37px 0 157px 0px;
+  }
+  .forMedia {
+    display: none;
+  }
+  .info p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 846px) {
+  .card {
+    max-width: 700px;
+    max-height: 350px;
+    margin-top: -20px;
+    gap: 30px;
+    border-radius: 300px;
+  }
+  .count {
+    font-size: 56px;
+  }
+  .cardItem {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  .bg {
+    display: none;
+  }
+  .top {
+    width: 90px;
+  }
+  .bot {
+    width: 90px;
+  }
+  .logoBig {
+    height: 90px;
+  }
+  .logoSmal {
+    height: 90px;
+  }
+  .header {
+    padding-bottom: 90px;
+  }
+  .info {
+    padding: 37px 0 140px 0px;
+  }
+  .forMedia {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 700px;
+    max-height: 320px;
+    margin-top: -20px;
+    gap: 20px;
+    border-radius: 200px;
+  }
+  .info {
+    padding: 37px 0 267px 0px;
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 716px) {
+  .card {
+    max-width: 700px;
+    max-height: 320px;
+    margin-top: -20px;
+    gap: 10px;
+    border-radius: 150px;
+    padding: 30px;
+  }
+  .count {
+    font-size: 46px;
+  }
+  .cardItem {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+  .bg {
+    display: none;
+  }
+  .top {
+    width: 80px;
+  }
+  .bot {
+    width: 80px;
+  }
+  .logoBig {
+    height: 80px;
+  }
+  .logoSmal {
+    height: 90px;
+  }
+  .header {
+    padding-bottom: 90px;
+  }
+  .info {
+    padding: 37px 0 130px 0px;
+  }
+  .forMedia {
+    display: none;
+  }
+  .info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 668px) {
+  .card {
+    max-width: 700px;
+    max-height: 300px;
+    margin-top: -20px;
+    gap: 15px;
+    border-radius: 120px;
+  }
+  .count {
+    font-size: 40px;
+  }
+  .cardItem {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+  .bg {
+    display: none;
+  }
+  .top {
+    width: 80px;
+  }
+  .bot {
+    width: 80px;
+  }
+  .logoBig {
+    height: 80px;
+  }
+  .logoSmal {
+    height: 90px;
+  }
+  .header {
+    padding-bottom: 90px;
+  }
+  .info {
+    padding: 37px 0 130px 0px;
+  }
+  .forMedia {
+    display: none;
+  }
+  .info p {
+    font-size: 14px;
+  }
+  .cardBtn button {
+    padding: 12px 26px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 37px 0px 110px 0px;
+  }
+}
+
+@media (max-width: 540px) {
+  .card {
+    max-width: 700px;
+    max-height: 250px;
+    gap: 10px;
+    border-radius: 100px;
+  }
+  .count {
+    font-size: 35px;
+  }
+  .cardItem {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .bg {
+    display: none;
+  }
+  .top {
+    width: 50px;
+  }
+  .bot {
+    width: 50px;
+  }
+  .logoBig {
+    height: 50px;
+  }
+  .logoSmal {
+    height: 50px;
+  }
+  .header {
+    padding-bottom: 90px;
+  }
+  .info {
+    padding: 37px 0 120px 0px;
+  }
+  .forMedia {
+    display: none;
+  }
+  .info p {
+    font-size: 14px;
+  }
+  .cardBtn button {
+    padding: 8px 5px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 37px 0px 110px 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+    max-width: 700px;
+    max-height: 250px;
+    gap: 10px;
+    border-radius: 60px;
+  }
+  .count {
+    font-size: 35px;
+  }
+  .cardItem {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+  .bg {
+    display: none;
+  }
+
+  .top {
+    width: 50px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .bot {
+    width: 50px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  .logoBig {
+    height: 50px;
+  }
+  .logoSmal {
+    height: 50px;
+  }
+  .header {
+    padding-bottom: 90px;
+  }
+  .info {
+    padding: 37px 0 130px 0px;
+  }
+  .forMedia {
+    display: none;
+  }
+  .info p {
+    font-size: 14px;
+  }
+  .cardBtn button {
+    padding: 12px 26px;
+    font-size: 12px;
+    height: 50px;
+    width: 150px;
+    white-space: nowrap;
+  }
+  .cardBtn img {
+    width: 30px;
+  }
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 37px 0px 110px 0px;
+  }
 }
