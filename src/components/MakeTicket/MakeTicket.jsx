@@ -67,11 +67,11 @@ export const MakeTicket = () => {
 		<div className={s.wrapper}>
 			<div className={s.titleBlock}>Make Your Ticker Win</div>
 			<div className={s.cards}>
-				<Swiper slidesPerView={1} ref={swiperRef} >
+				<Swiper slidesPerView={1} ref={swiperRef} autoHeight={true} centeredSlides={true}>
 					<SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }} key={1}>
 						<div className={s.card}>
 							<div className={s.cardHeader}>
-								<img src={question} alt="???" />
+								<img src={question} className={s.question} alt="???" />
 							</div>
 							<div className={s.cardItem}>
 								Create a team around your idea, and make it to the top
@@ -82,10 +82,10 @@ export const MakeTicket = () => {
 						</div>
 					</SwiperSlide>
 					{SLIDE_MOCK.map((slide) =>
-						<SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center", minWidth: 964 }} key={slide.id}>
+						<SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }} key={slide.id}>
 							<div className={s.cardSlide}>
-								<div className={s.letters}>
-									<img src={slide.letters} alt='letters' />
+								<div className={s.lettersBlock}>
+									<img src={slide.letters} className={s.letters} alt='letters' />
 								</div>
 								<div className={s.textBlock}>
 									<span className={s.title}>{slide.title}<br />{slide.subTitle}</span>
@@ -93,7 +93,7 @@ export const MakeTicket = () => {
 								</div>
 								<div className={s.bottomBlock}>
 									<div className={s.avatarsBlock}>
-										<img src={slide.avatars} alt='avatars' />
+										<img src={slide.avatars} className={s.avatars} alt='avatars' />
 										<span className={s.count}>{slide.count}+</span>
 									</div>
 									<button className={s.joinBtn}>Join team</button>
@@ -101,7 +101,7 @@ export const MakeTicket = () => {
 							</div>
 						</SwiperSlide>
 					)}
-					<SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center", minWidth: 964 }}>
+					<SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
 						<div className={s.cardSlideEnd}>
 							<span>Think you`ve got a better idea of what this coin could be?</span>
 							<span>Get a team boost in the app and see your idea featured in this section. </span>
