@@ -1,155 +1,401 @@
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	position: relative;
+	padding: 0 80px;
 }
 
 .title {
-  color: #fff;
-  max-width: 1280px;
-  font-size: 56px;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 120px;
+	color: #fff;
+	width: 100%;
+	max-width: 1280px;
+	font-size: 56px;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 120px;
 }
 
 .title span {
-  background: linear-gradient(45deg, #00f0ff, #00ff75);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+	background: linear-gradient(45deg, #00f0ff, #00ff75);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: center;
-  justify-content: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	align-items: center;
+	justify-content: center;
 }
 
 .count {
-  font-size: 104px;
-  font-weight: 500;
-  line-height: 104px;
-  text-align: center;
-  color: #00f0ff;
-  position: absolute;
+	font-size: 104px;
+	font-weight: 500;
+	line-height: 104px;
+	text-align: center;
+	color: #00f0ff;
+	position: absolute;
 }
 
 .top {
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+	border-top-left-radius: 24px;
+	border-top-right-radius: 24px;
 }
 .bot {
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
 }
 
 .cloudLeft {
-  position: absolute;
-  left: 0;
-  top: 40%;
+	position: absolute;
+	left: 0;
+	top: 40%;
 }
 .cloudRight {
-  position: absolute;
-  right: 0;
-  top: 30%;
+	position: absolute;
+	right: 0;
+	top: 30%;
 }
 
 .questionWrap {
-  width: 800px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding-top: 120px;
-  position: relative;
-  gap: 15px;
+	max-width: 800px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding-top: 120px;
+	position: relative;
+	gap: 15px;
 }
 
 .question {
-  width: 100%;
-  max-width: 500px;
+	width: 100%;
+	max-width: 500px;
 }
 
 .cloudClick {
-  position: absolute;
-  top: 30px;
-  left: -28%;
-}
-
-.cloudClick img {
-  width: 267px;
+	position: absolute;
+	top: 30px;
+	left: -78%;
 }
 
 .playNowWrap {
-  position: relative;
-  margin-top: -4.8px;
+	position: relative;
+	margin-top: -4.8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .playNowBlock {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 1280px;
-  height: 711.6px;
-  border-radius: 2000px;
-  background: linear-gradient(to right, #00f0ff 0%, #00ff75 100%);
-  position: relative;
-  overflow: hidden;
+	display: flex;
+	align-items: center;
+	padding: 76px 160px;
+	flex-direction: column;
+	justify-content: space-around;
+	max-width: 1280px;
+	width: 100%;
+	gap: 80px;
+	border-radius: 2000px;
+	background: linear-gradient(to right, #00f0ff 0%, #00ff75 100%);
+	position: relative;
+	overflow: hidden;
+}
+
+.playNowBlock img {
+	max-width: 960px;
+	width: 100%;
+	min-width: 250px;
 }
 
 .playNowTitle {
-  font-size: 40px;
-  font-weight: 600;
-  color: black;
+	font-size: 40px;
+	font-weight: 600;
+	color: black;
 }
 
 .playNowButton {
-  width: 184px;
-  height: 72px;
-  background-color: black;
-  color: #fff;
-  border-radius: 100px;
-  font-size: 20px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
+	padding: 20px 44px;
+	background-color: black;
+	color: #fff;
+	border-radius: 100px;
+	font-size: 20px;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
 }
 
 .rocket {
-  position: absolute;
-  bottom: -50px;
-  right: -30px;
+	position: absolute;
+	bottom: -50px;
+	right: -30px;
 }
 .info {
-  padding: 36px 75px 36px 0;
-  display: flex;
-  width: 100%;
-  width: 1280px;
-  justify-content: space-between;
+	padding: 36px 75px 36px 0;
+	display: flex;
+	width: 100%;
+	max-width: 1280px;
+	justify-content: space-between;
 }
 
 .info p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: #00ff75;
-  cursor: pointer;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	color: #00ff75;
+	cursor: pointer;
 }
 
 .info img {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .infoText {
-  display: flex;
-  align-items: center;
-  gap: 32px;
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+@media (max-width: 1440px) {
+	.bg {
+		margin-bottom: -10px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.title {
+		font-size: 44px;
+	}
+	.bg {
+		margin-bottom: -18px;
+	}
+	.bg img {
+		width: 458px;
+	}
+	.cloudLeft {
+		position: absolute;
+		left: 0;
+		top: 35%;
+		width: 250px;
+	}
+
+	.cloudRight {
+		width: 250px;
+	}
+	.count {
+		font-size: 84px;
+	}
+	.card img {
+		width: 120px;
+	}
+	.cloudClick {
+		left: -70%;
+		top: 25%;
+		width: 240px;
+	}
+	.playNowBlock {
+		display: flex;
+		align-items: center;
+		padding: 56px 125px;
+		gap: 40px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.title {
+		font-size: 35px;
+	}
+	.playNowBlock {
+		gap: 50px;
+	}
+	.wrapper {
+		padding: 0 40px;
+	}
+	.bg img {
+		width: 380px;
+	}
+	.bg {
+		margin-bottom: -20px;
+	}
+	.count {
+		font-size: 74px;
+	}
+	.card img {
+		width: 95px;
+	}
+	.cloudClick {
+		left: -64%;
+		top: 30%;
+		width: 180px;
+	}
+	.cloudLeft {
+		position: absolute;
+		left: 0;
+		top: 35%;
+		width: 180px;
+	}
+
+	.cloudRight {
+		top: 30%;
+		width: 210px;
+	}
+	.playNowTitle {
+		font-size: 32px;
+	}
+	.rocket img {
+		width: 100px;
+	}
+	.rocket {
+		bottom: -50px;
+		right: -20px;
+	}
+}
+
+@media (max-width: 820px) {
+	.wrapper {
+		padding: 0 20px;
+	}
+	.title {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		padding: 0 20px;
+	}
+	.title {
+		font-size: 28px;
+	}
+	.questionWrap {
+		padding-top: 80px;
+	}
+
+	.cloudClick {
+		left: -54%;
+		top: 42%;
+		width: 135px;
+	}
+	.playNowBlock {
+		display: flex;
+		align-items: center;
+		padding: 40px 105px;
+		gap: 30px;
+		border-radius: 130px;
+	}
+	.playNowTitle {
+		font-size: 22px;
+	}
+
+	.count {
+		font-size: 55px;
+	}
+	.card img {
+		width: 80px;
+	}
+	.bg img {
+		width: 320px;
+	}
+	.bg {
+		margin-bottom: -25px;
+	}
+	.rocket {
+		display: none;
+	}
+	.cloudLeft {
+		left: 0;
+		top: 40%;
+		width: 130px;
+	}
+
+	.cloudRight {
+		top: 38%;
+		width: 130px;
+	}
+	.playNowButton {
+		padding: 15px 35px;
+		font-size: 15px;
+	}
+	.info p {
+		font-size: 15px;
+	}
+	.info {
+		padding: 36px 10px;
+	}
+}
+
+@media (max-width: 578px) {
+	.title {
+		font-size: 20px;
+	}
+	.cloudLeft {
+		left: 0;
+		top: 45%;
+		width: 100px;
+	}
+
+	.cloudRight {
+		top: 42%;
+		width: 100px;
+	}
+	.playNowTitle {
+		font-size: 17px;
+	}
+	.playNowBlock {
+		border-radius: 100px;
+		padding: 35px 55px 20px 55px;
+	}
+	.cloudClick {
+		left: -49%;
+		top: 50%;
+		width: 100px;
+	}
+	.count {
+		font-size: 35px;
+	}
+	.card img {
+		width: 60px;
+	}
+	.bg img {
+		width: 260px;
+	}
+	.top {
+		border-top-left-radius: 14px;
+		border-top-right-radius: 14px;
+	}
+	.bot {
+		border-bottom-left-radius: 14px;
+		border-bottom-right-radius: 14px;
+	}
+}
+
+@media (max-width: 425px) {
+	.title {
+		font-size: 17px;
+	}
+	.playNowBlock {
+		border-radius: 100px;
+		padding: 25px 55px 10px 55px;
+	}
+	.cloudClick {
+		left: -44%;
+		top: 55%;
+		width: 80px;
+	}
+	.count {
+		font-size: 32px;
+	}
+	.card img {
+		width: 55px;
+	}
+	.bg img {
+		width: 242px;
+	}
 }
