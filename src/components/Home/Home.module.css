@@ -33,14 +33,21 @@
 	gap: 4px;
 	align-items: center;
 	justify-content: center;
+	color: #00f0ff;
+}
+.card:first-child {
+	color: #00ffb2;
 }
 
+.card:nth-child(3) {
+	color: #9747ff;
+}
 .count {
 	font-size: 104px;
 	font-weight: 500;
 	line-height: 104px;
 	text-align: center;
-	color: #00f0ff;
+
 	position: absolute;
 }
 

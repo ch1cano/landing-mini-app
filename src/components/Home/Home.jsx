@@ -12,16 +12,21 @@ import { useState } from "react";
 import { Parallax } from "react-scroll-parallax";
 
 export const Home = () => {
-	const [letter, setLetter] = useState("?");
-	const getRandomLetter = () => {
-		const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		const randomIndex = Math.floor(Math.random() * alphabet.length);
-		return alphabet[randomIndex];
-	};
+	const [letters, setLetters] = useState(["?", "?", "?"]);
+	const [alphabet, setAlphabet] = useState(
+		"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
+	);
 
-	const changeLetter = () => {
-		const newLetter = getRandomLetter();
-		setLetter(newLetter);
+	const changeLetter = (index) => {
+		setLetters((prevLetters) => {
+			const newLetters = [...prevLetters];
+			const newAlphabet = [...alphabet];
+			const randomIndex = Math.floor(Math.random() * newAlphabet.length);
+			newLetters[index] = newAlphabet[randomIndex];
+			newAlphabet.splice(randomIndex, 1);
+			setAlphabet(newAlphabet);
+			return newLetters;
+		});
 	};
 	return (
 		<div className={s.wrapper}>
@@ -34,27 +39,15 @@ export const Home = () => {
 			<img className={s.cloudLeft} src={cloudLeft} alt="group" />
 			<img className={s.cloudRight} src={cloudRight} alt="group" />
 			<div className={s.questionWrap}>
-				<div className={s.card}>
-					<img className={s.top} src={top} alt="" />
-					<p className={s.count} onClick={changeLetter}>
-						{letter}
-					</p>
-					<img className={s.bot} src={bot} alt="" />
-				</div>
-				<div className={s.card}>
-					<img className={s.top} src={top} alt="" />
-					<p className={s.count} onClick={changeLetter}>
-						{letter}
-					</p>
-					<img className={s.bot} src={bot} alt="" />
-				</div>
-				<div className={s.card}>
-					<img className={s.top} src={top} alt="" />
-					<p className={s.count} onClick={changeLetter}>
-						{letter}
-					</p>
-					<img className={s.bot} src={bot} alt="" />
-				</div>
+				{letters.map((letter, index) => (
+					<div className={s.card} key={index}>
+						<img className={s.top} src={top} alt="" />
+						<p className={s.count} onClick={() => changeLetter(index)}>
+							{letter}
+						</p>
+						<img className={s.bot} src={bot} alt="" />
+					</div>
+				))}
 				<img className={s.cloudClick} src={click} alt="group" />
 			</div>
 			<div className={s.bg}>

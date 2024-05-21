@@ -150,6 +150,9 @@
 		bottom: 15%;
 		right: 15%;
 	}
+	.title {
+		font-size: 35px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -172,18 +175,18 @@
 		height: 250px;
 	}
 	.title {
-		font-size: 48px;
+		font-size: 30px;
 	}
 }
 
 @media (max-width: 580px) {
 	.title {
-		font-size: 40px;
+		font-size: 28px;
 	}
 }
 
 @media (max-width: 425px) {
 	.title {
-		font-size: 37px;
+		font-size: 26px;
 	}
 }
