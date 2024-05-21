@@ -10,16 +10,21 @@ import starBlue from "../../assets/blueStar.svg";
 import { useState } from "react";
 
 export const CoinBlock = () => {
-	const [letter, setLetter] = useState("?");
-	const getRandomLetter = () => {
-		const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		const randomIndex = Math.floor(Math.random() * alphabet.length);
-		return alphabet[randomIndex];
-	};
+	const [letters, setLetters] = useState(["?", "?", "?"]);
+	const [alphabet, setAlphabet] = useState(
+		"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
+	);
 
-	const changeLetter = () => {
-		const newLetter = getRandomLetter();
-		setLetter(newLetter);
+	const changeLetter = (index) => {
+		setLetters((prevLetters) => {
+			const newLetters = [...prevLetters];
+			const newAlphabet = [...alphabet];
+			const randomIndex = Math.floor(Math.random() * newAlphabet.length);
+			newLetters[index] = newAlphabet[randomIndex];
+			newAlphabet.splice(randomIndex, 1);
+			setAlphabet(newAlphabet);
+			return newLetters;
+		});
 	};
 	return (
 		<div className={s.wrapper}>
@@ -37,27 +42,15 @@ export const CoinBlock = () => {
 			</div>
 			<div className={s.card}>
 				<div className={s.cardsHeader}>
-					<div className={s.cardHeader}>
-						<img className={s.top} src={top} alt="" />
-						<p className={s.count} onClick={changeLetter}>
-							{letter}
-						</p>
-						<img className={s.bot} src={bot} alt="" />
-					</div>
-					<div className={s.cardHeader}>
-						<img className={s.top} src={top} alt="" />
-						<p className={s.count} onClick={changeLetter}>
-							{letter}
-						</p>
-						<img className={s.bot} src={bot} alt="" />
-					</div>
-					<div className={s.cardHeader}>
-						<img className={s.top} src={top} alt="" />
-						<p className={s.count} onClick={changeLetter}>
-							{letter}
-						</p>
-						<img className={s.bot} src={bot} alt="" />
-					</div>
+					{letters.map((letter, index) => (
+						<div className={s.cardHeader} key={index}>
+							<img className={s.top} src={top} alt="" />
+							<p className={s.count} onClick={() => changeLetter(index)}>
+								{letter}
+							</p>
+							<img className={s.bot} src={bot} alt="" />
+						</div>
+					))}
 				</div>
 
 				<div className={s.cardItem}>
