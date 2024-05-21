@@ -472,9 +472,13 @@
   }
   .top {
     width: 50px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   }
   .bot {
     width: 50px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
   }
   .logoBig {
     height: 50px;
