@@ -13,13 +13,16 @@ export const MiniAppView = () => {
 				community to decide<br /> <span>what should come next.</span>
 			</div>
 			<div className={s.phoneBlock}>
-				<img className={s.starBlack} src={starBlack} alt="blackStar" />
-				<img className={s.starBlack2} src={starBlack} alt="blackStar" />
-				<img width={38} className={s.starBlack3} src={starBlack} alt="blackStar" />
-				<img width={38} className={s.starBlack4} src={starBlack} alt="blackStar" />
-				<div className={s.shodow}>
-					<div className={s.bgCloud}>
-						<img className={s.phone} src={miniApp} alt="minApp" />
+				<div className={s.shadowBg}></div>
+				<div className={s.phoneBlockContent}>
+					<img className={s.starBlack} src={starBlack} alt="blackStar" />
+					<img className={s.starBlack2} src={starBlack} alt="blackStar" />
+					<img width={38} className={s.starBlack3} src={starBlack} alt="blackStar" />
+					<img width={38} className={s.starBlack4} src={starBlack} alt="blackStar" />
+					<div className={s.shodow}>
+						<div className={s.bgCloud}>
+							<img className={s.phone} src={miniApp} alt="minApp" />
+						</div>
 					</div>
 				</div>
 			</div>
