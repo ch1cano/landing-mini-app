@@ -329,6 +329,7 @@
 
   .titleBlock {
     font-size: 35px;
+    padding: 0;
   }
   .card {
     border-radius: 32px;
