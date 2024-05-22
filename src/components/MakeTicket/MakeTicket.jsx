@@ -67,8 +67,8 @@ export const MakeTicket = () => {
 		<div className={s.wrapper}>
 			<div className={s.titleBlock}>Make Your Ticker Win</div>
 			<div className={s.cards}>
-				<Swiper slidesPerView={1} ref={swiperRef} autoHeight={true} centeredSlides={true}>
-					<SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }} key={1}>
+				<Swiper slidesPerView={1} ref={swiperRef} autoHeight={true} centeredSlides={true} spaceBetween={200}>
+					<SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "auto" }} key={1}>
 						<div className={s.card}>
 							<div className={s.cardHeader}>
 								<img src={question} className={s.question} alt="???" />
@@ -82,7 +82,7 @@ export const MakeTicket = () => {
 						</div>
 					</SwiperSlide>
 					{SLIDE_MOCK.map((slide) =>
-						<SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }} key={slide.id}>
+						<SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "auto" }} key={slide.id}>
 							<div className={s.cardSlide}>
 								<div className={s.lettersBlock}>
 									<img src={slide.letters} className={s.letters} alt='letters' />
@@ -101,7 +101,7 @@ export const MakeTicket = () => {
 							</div>
 						</SwiperSlide>
 					)}
-					<SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+					<SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "auto" }}>
 						<div className={s.cardSlideEnd}>
 							<span>Think you`ve got a better idea of what this coin could be?</span>
 							<span>Get a team boost in the app and see your idea featured in this section. </span>

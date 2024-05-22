@@ -59,7 +59,7 @@ export const CoinBlock = () => {
 				</div>
 				<div className={s.cardBtn}>
 					<button>
-						<img src={cube} alt="cube" />
+						<img className={s.cube} src={cube} alt="cube" />
 						BUY $??? (SOON)
 					</button>
 				</div>
