@@ -281,6 +281,7 @@
 
 @media (max-width: 768px) {
 	.wrapper {
+		height: 100vh;
 		padding: 0 20px;
 	}
 	.title {
@@ -344,8 +345,12 @@
 }
 
 @media (max-width: 578px) {
+	.wrapper {
+		height: 100vh;
+	}
 	.title {
 		font-size: 20px;
+		padding-bottom: 50px;
 	}
 	.cloudLeft {
 		left: 0;
@@ -365,18 +370,18 @@
 		padding: 35px 55px 20px 55px;
 	}
 	.cloudClick {
-		left: -49%;
-		top: 50%;
-		width: 100px;
+		left: -34%;
+		top: 25%;
+		width: 90px;
 	}
 	.count {
-		font-size: 35px;
+		font-size: 45px;
 	}
 	.card img {
-		width: 60px;
+		width: 75px;
 	}
 	.bg img {
-		width: 260px;
+		width: 310px;
 	}
 	.top {
 		border-top-left-radius: 14px;
@@ -390,24 +395,28 @@
 
 @media (max-width: 425px) {
 	.title {
-		font-size: 17px;
+		font-size: 18px;
 	}
 	.playNowBlock {
 		border-radius: 100px;
 		padding: 25px 55px 10px 55px;
 	}
 	.cloudClick {
-		left: -44%;
-		top: 55%;
-		width: 80px;
+		left: -35%;
+		top: 40%;
+		width: 75px;
 	}
 	.count {
-		font-size: 32px;
+		font-size: 37px;
 	}
 	.card img {
-		width: 55px;
+		width: 65px;
 	}
 	.bg img {
-		width: 242px;
+		width: 278px;
+	}
+	.cloudRight {
+		top: 43%;
+		width: 100px;
 	}
 }
