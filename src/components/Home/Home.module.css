@@ -8,7 +8,7 @@
 	padding: 0 80px;
 }
 
-.wrapper img{
+.wrapper img {
 	height: auto;
 }
 
@@ -28,6 +28,7 @@
 	background-clip: text;
 	color: transparent;
 }
+
 .card {
 	position: relative;
 	display: flex;
@@ -40,6 +41,7 @@
 	-moz-user-select: none;
 	cursor: pointer;
 }
+
 .card:first-child {
 	color: #00ffb2;
 }
@@ -47,6 +49,7 @@
 .card:nth-child(3) {
 	color: #9747ff;
 }
+
 .count {
 	font-size: 104px;
 	font-weight: 500;
@@ -60,6 +63,7 @@
 	border-top-left-radius: 24px;
 	border-top-right-radius: 24px;
 }
+
 .bot {
 	border-bottom-left-radius: 24px;
 	border-bottom-right-radius: 24px;
@@ -70,6 +74,7 @@
 	left: 0;
 	top: 40%;
 }
+
 .cloudRight {
 	position: absolute;
 	right: 0;
@@ -151,7 +156,7 @@
 	will-change: transform, opacity;
 }
 
-.rocket.active{
+.rocket.active {
 	transform: translateY(-100vh);
 	opacity: 0;
 }
@@ -187,7 +192,8 @@
 	.bg {
 		margin-bottom: -10px;
 	}
-	.rocket{
+
+	.rocket {
 		right: 20px;
 	}
 }
@@ -196,12 +202,15 @@
 	.title {
 		font-size: 44px;
 	}
+
 	.bg {
 		margin-bottom: -18px;
 	}
+
 	.bg img {
 		width: 458px;
 	}
+
 	.cloudLeft {
 		position: absolute;
 		left: 0;
@@ -212,17 +221,21 @@
 	.cloudRight {
 		width: 250px;
 	}
+
 	.count {
 		font-size: 84px;
 	}
+
 	.card img {
 		width: 120px;
 	}
+
 	.cloudClick {
 		left: -70%;
 		top: 25%;
 		width: 240px;
 	}
+
 	.playNowBlock {
 		display: flex;
 		align-items: center;
@@ -235,29 +248,37 @@
 	.title {
 		font-size: 35px;
 	}
+
 	.playNowBlock {
 		gap: 50px;
 	}
+
 	.wrapper {
 		padding: 0 40px;
 	}
+
 	.bg img {
 		width: 380px;
 	}
+
 	.bg {
 		margin-bottom: -20px;
 	}
+
 	.count {
 		font-size: 74px;
 	}
+
 	.card img {
 		width: 95px;
 	}
+
 	.cloudClick {
 		left: -64%;
 		top: 30%;
 		width: 180px;
 	}
+
 	.cloudLeft {
 		position: absolute;
 		left: 0;
@@ -269,9 +290,11 @@
 		top: 30%;
 		width: 210px;
 	}
+
 	.playNowTitle {
 		font-size: 32px;
 	}
+
 	.rocket img {
 		width: 100px;
 	}
@@ -282,6 +305,11 @@
 	.wrapper {
 		padding: 0 20px;
 	}
+
+	.wrapper .wrapper {
+		padding: 0px;
+	}
+
 	.title {
 		font-size: 28px;
 	}
@@ -291,11 +319,13 @@
 	.wrapper {
 		padding: 0 20px;
 	}
+
 	.title {
 		font-size: 28px;
 		text-align: start;
 		padding-top: 20px;
 	}
+
 	.questionWrap {
 		padding-top: 20px;
 	}
@@ -305,13 +335,15 @@
 		top: 42%;
 		width: 135px;
 	}
+
 	.playNowBlock {
 		display: flex;
 		align-items: center;
 		padding: 40px 105px;
 		gap: 30px;
-		border-radius: 30px;
+		border-radius: 32px;
 	}
+
 	.playNowTitle {
 		font-size: 22px;
 	}
@@ -319,18 +351,23 @@
 	.count {
 		font-size: 55px;
 	}
+
 	.card img {
 		width: 80px;
 	}
+
 	.bg img {
 		width: 320px;
 	}
+
 	.bg {
 		margin-bottom: -25px;
 	}
+
 	.rocket {
 		display: none;
 	}
+
 	.cloudLeft {
 		left: 0;
 		top: 40%;
@@ -341,22 +378,28 @@
 		top: 38%;
 		width: 130px;
 	}
+
 	.playNowButton {
 		padding: 15px 35px;
 		font-size: 15px;
 	}
+
 	.info p {
 		font-size: 15px;
 	}
+
 	.info {
 		padding: 36px 10px;
 	}
 }
 
 @media (max-width: 578px) {
+
 	.title {
 		font-size: 20px;
+		padding-bottom: 50px;
 	}
+
 	.cloudLeft {
 		left: 0;
 		top: 45%;
@@ -367,31 +410,38 @@
 		top: 42%;
 		width: 100px;
 	}
+
 	.playNowTitle {
 		font-size: 18px;
 	}
+
 	.playNowBlock {
-		border-radius: 100px;
 		padding: 35px 55px 20px 55px;
 	}
+
 	.cloudClick {
-		left: -49%;
-		top: 50%;
-		width: 100px;
+		left: -34%;
+		top: 25%;
+		width: 90px;
 	}
+
 	.count {
-		font-size: 35px;
+		font-size: 45px;
 	}
+
 	.card img {
-		width: 60px;
+		width: 75px;
 	}
+
 	.bg img {
-		width: 260px;
+		width: 310px;
 	}
+
 	.top {
 		border-top-left-radius: 14px;
 		border-top-right-radius: 14px;
 	}
+
 	.bot {
 		border-bottom-left-radius: 14px;
 		border-bottom-right-radius: 14px;
@@ -402,24 +452,33 @@
 	.title {
 		font-size: 18px;
 		text-align: start;
-		padding-top: 30px;
+		padding: 30px 0px 0px;
 	}
+
 	.playNowBlock {
-		border-radius: 100px;
 		padding: 25px 55px 10px 55px;
 	}
+
 	.cloudClick {
-		left: -44%;
-		top: 55%;
-		width: 80px;
+		left: -35%;
+		top: 40%;
+		width: 75px;
 	}
+
 	.count {
-		font-size: 32px;
+		font-size: 37px;
 	}
+
 	.card img {
-		width: 55px;
+		width: 65px;
 	}
+
 	.bg img {
-		width: 242px;
+		width: 278px;
+	}
+
+	.cloudRight {
+		top: 43%;
+		width: 100px;
 	}
 }

@@ -7,9 +7,9 @@ import top from "../../assets/topCard.svg";
 import bot from "../../assets/botCard.svg";
 import star from "../../assets/greenStar.svg";
 import starBlue from "../../assets/blueStar.svg";
-import {useState} from "react";
+import { useState } from "react";
 import classNames from "classnames";
-import {ScrollAnimation} from "../ScrollAnimation/ScrollAnimation.jsx";
+import { ScrollAnimation } from "../ScrollAnimation/ScrollAnimation.jsx";
 
 export const CoinBlock = () => {
     const [letters, setLetters] = useState(["?", "?", "?"]);
@@ -37,21 +37,21 @@ export const CoinBlock = () => {
             </div>
             <ScrollAnimation className={s.wrapper} animation="fadeBottom" delay="500ms">
                 <div className={s.header}>
-                    <img className={s.logoBig} src={big} height={155} alt="???"/>
-                    <img className={s.logoSmal} src={small} height={155} alt="???"/>
+                    <img className={s.logoBig} src={big} height={155} alt="???" />
+                    <img className={s.logoSmal} src={small} height={155} alt="???" />
                 </div>
                 <div className={s.bg}>
-                    <img src={bg} height={293} alt="???"/>
+                    <img src={bg} height={293} alt="???" />
                 </div>
                 <div className={s.card}>
                     <div className={s.cardsHeader}>
                         {letters.map((letter, index) => (
                             <div className={s.cardHeader} key={index}>
-                                <img className={s.top} src={top} alt=""/>
+                                <img className={s.top} src={top} alt="" />
                                 <p className={s.count} onClick={() => changeLetter(index)}>
                                     {letter}
                                 </p>
-                                <img className={s.bot} src={bot} alt=""/>
+                                <img className={s.bot} src={bot} alt="" />
                             </div>
                         ))}
                     </div>
@@ -62,16 +62,16 @@ export const CoinBlock = () => {
                     </div>
                     <div className={s.cardBtn}>
                         <button>
-                            <img src={cube} alt="cube"/>
+                            <img src={cube} alt="cube" />
                             BUY $??? (SOON)
                         </button>
                     </div>
                     <div className={s.forMedia}>
-                        <img className={classNames(s.bigStar, "pulse-duration-5")} src={star} alt=""/>
+                        <img className={classNames(s.bigStar, "pulse-duration-5")} src={star} alt="" />
 
-                        <img width={66} className={classNames(s.smallStar, "pulse-duration-1")} src={star} alt=""/>
+                        <img width={66} className={classNames(s.smallStar, "pulse-duration-1")} src={star} alt="" />
 
-                        <img className={classNames(s.blueStar, "pulse")} src={starBlue} alt=""/>
+                        <img className={classNames(s.blueStar, "pulse")} src={starBlue} alt="" />
                     </div>
                 </div>
             </ScrollAnimation>

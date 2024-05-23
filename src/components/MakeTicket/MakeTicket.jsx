@@ -1,4 +1,4 @@
-import {Swiper, SwiperSlide} from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import s from "./MakeTicket.module.css";
 
 import question from "../../assets/quest.png";
@@ -14,8 +14,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import {useRef} from "react";
-import {ScrollAnimation} from "../ScrollAnimation/ScrollAnimation.jsx";
+import { useRef } from "react";
+import { ScrollAnimation } from "../ScrollAnimation/ScrollAnimation.jsx";
 
 
 const SLIDE_MOCK = [
@@ -70,11 +70,11 @@ export const MakeTicket = () => {
                 <h2 className={s.titleBlock}>Make Your Ticker Win</h2>
             </ScrollAnimation>
             <div className={s.cards}>
-                <Swiper slidesPerView={1} ref={swiperRef} centeredSlides={true} autoHeight>
-                    <SwiperSlide style={{display: "flex", alignItems: "center", justifyContent: "center"}} key={1}>
+                <Swiper wrapperClass={s.sliderWrapper} slidesPerView={1} ref={swiperRef} centeredSlides={true} style={{ padding: '20px' }} spaceBetween={20} autoHeight>
+                    <SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }} key={1}>
                         <div className={s.card}>
                             <div className={s.cardHeader}>
-                                <img src={question} className={s.question} alt="???"/>
+                                <img src={question} className={s.question} alt="???" />
                             </div>
                             <div className={s.cardItem}>
                                 Create a team around your idea, and make it to the top
@@ -85,19 +85,19 @@ export const MakeTicket = () => {
                         </div>
                     </SwiperSlide>
                     {SLIDE_MOCK.map((slide) =>
-                        <SwiperSlide style={{display: "flex", alignItems: "center", justifyContent: "center"}}
-                                     key={slide.id}>
+                        <SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+                            key={slide.id}>
                             <div className={s.cardSlide}>
                                 <div className={s.lettersBlock}>
-                                    <img src={slide.letters} className={s.letters} alt='letters'/>
+                                    <img src={slide.letters} className={s.letters} alt='letters' />
                                 </div>
                                 <div className={s.textBlock}>
-                                    <span className={s.title}>{slide.title}<br/>{slide.subTitle}</span>
+                                    <span className={s.title}>{slide.title}<br />{slide.subTitle}</span>
                                     <span className={s.description}>{slide.description}</span>
                                 </div>
                                 <div className={s.bottomBlock}>
                                     <div className={s.avatarsBlock}>
-                                        <img src={slide.avatars} className={s.avatars} alt='avatars'/>
+                                        <img src={slide.avatars} className={s.avatars} alt='avatars' />
                                         <span className={s.count}>{slide.count}+</span>
                                     </div>
                                     <button className={s.joinBtn}>Join team</button>
@@ -105,7 +105,7 @@ export const MakeTicket = () => {
                             </div>
                         </SwiperSlide>
                     )}
-                    <SwiperSlide style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+                    <SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                         <div className={s.cardSlideEnd}>
                             <span>Think you`ve got a better idea of what this coin could be?</span>
                             <span>Get a team boost in the app and see your idea featured in this section. </span>
@@ -118,14 +118,14 @@ export const MakeTicket = () => {
             </div>
             <div className={s.navigation}>
                 <div onClick={goPrev} className={s.arrow}>
-                    <img src={left}/>
+                    <img src={left} />
                 </div>
                 <div onClick={goNext} className={s.arrow}>
-                    <img src={right}/>
+                    <img src={right} />
                 </div>
-                <img width={66} className={s.smallStar} src={star} alt=""/>
+                <img width={66} className={s.smallStar} src={star} alt="" />
             </div>
-            <img className={s.bigStar} src={star} alt=""/>
-        </ScrollAnimation>
+            <img className={s.bigStar} src={star} alt="" />
+        </ScrollAnimation >
     );
 };

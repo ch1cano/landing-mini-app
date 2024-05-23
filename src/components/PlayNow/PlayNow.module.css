@@ -126,6 +126,7 @@
 	.card img {
 		max-width: 100%;
 	}
+
 	.card {
 		min-height: 520px;
 	}
@@ -135,20 +136,24 @@
 	.wrapper {
 		padding: 40px;
 	}
+
 	.cardsBlock {
 		width: 100%;
 		padding: 80px 80px 44px 80px;
 		display: flex;
 		flex-direction: column;
 	}
+
 	.card {
 		min-height: 580px;
 	}
+
 	.starAzure2 {
 		position: absolute;
 		bottom: 15%;
 		right: 15%;
 	}
+
 	.title {
 		font-size: 35px;
 	}
@@ -158,22 +163,27 @@
 	.wrapper {
 		padding: 40px 20px;
 	}
+
 	.cardsBlock {
 		width: 100%;
-		padding: 40px 20px;
+		padding: 40px 0px;
 		display: flex;
 		flex-direction: column;
 	}
+
 	.card {
-		min-height: 530px;
-		border-radius: 30px;
+		min-height: 430px;
+		border-radius: 32px;
 	}
+
 	.wrapperStars {
 		display: none;
 	}
+
 	.content {
 		height: 250px;
 	}
+
 	.title {
 		font-size: 30px;
 	}
