@@ -1,0 +1,68 @@
+.animation {
+    will-change: transfrom, opacity;
+}
+
+.fadeTop{
+    opacity: 0;
+}
+
+.fadeTop.active{
+    animation: fadeTop 1s forwards ease-in-out;
+}
+
+.fadeBottom {
+    opacity: 0;
+}
+.fadeBottom.active{
+    animation: fadeBottom 1s forwards ease-in-out;
+}
+
+.fadeLeft{
+    opacity: 0;
+}
+.fadeLeft.active{
+    animation: fadeLeft 1s forwards ease-in-out;
+}
+
+.fade{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade.active{
+    opacity: 1;
+}
+
+
+@keyframes fadeTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeLeft  {
+    0%{
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

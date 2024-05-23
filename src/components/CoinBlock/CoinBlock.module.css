@@ -1,5 +1,4 @@
 .wrapper {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +7,6 @@
   padding: 0 80px 150px 80px;
   position: relative;
   margin: 0;
-
 }
 
 .info {
@@ -87,6 +85,8 @@
 	line-height: 104px;
 	text-align: center;
 	position: absolute;
+	-webkit-user-select: none;
+	-moz-user-select: none;
 }
 
 .top {
@@ -331,7 +331,7 @@
 		height: 90px;
 	}
 	.header {
-		padding-bottom: 90px;
+		padding-bottom: 50px;
 	}
 	.info {
 		padding: 37px 0 140px 0px;
@@ -342,6 +342,9 @@
 }
 
 @media (max-width: 768px) {
+	.wrapper{
+		padding: 20px;
+	}
 	.card {
 		max-width: 700px;
 		max-height: 320px;
@@ -350,13 +353,17 @@
 		border-radius: 200px;
 	}
 	.info {
-		padding: 37px 0 267px 0px;
+		padding: 37px 0 100px 0px;
 		display: flex;
 		text-align: end;
 		justify-content: end;
 		align-items: end;
 		width: 100%;
 		gap: 32px;
+	}
+
+	.header{
+		padding-bottom: 80px;
 	}
 }
 
@@ -391,9 +398,6 @@
 	}
 	.logoSmal {
 		height: 90px;
-	}
-	.header {
-		padding-bottom: 90px;
 	}
 	.info {
 		padding: 37px 0 130px 0px;
@@ -438,9 +442,6 @@
 	.logoSmal {
 		height: 90px;
 	}
-	.header {
-		padding-bottom: 90px;
-	}
 	.info {
 		padding: 37px 0 130px 0px;
 	}
@@ -454,6 +455,7 @@
 		padding: 12px 26px;
 		font-size: 13px;
 		white-space: nowrap;
+		width: 100%;
 	}
 	.info {
 		display: flex;
@@ -472,10 +474,11 @@
 		max-width: 700px;
 		max-height: 250px;
 		gap: 10px;
-		border-radius: 100px;
+		border-radius: 30px;
 	}
 	.count {
 		font-size: 35px;
+
 	}
 	.cardItem {
 		font-size: 15px;
@@ -501,12 +504,6 @@
 	.logoSmal {
 		height: 50px;
 	}
-	.header {
-		padding-bottom: 90px;
-	}
-	.info {
-		padding: 37px 0 120px 0px;
-	}
 	.forMedia {
 		display: none;
 	}
@@ -523,7 +520,7 @@
 		justify-content: center;
 		align-items: center;
 		width: fit-content;
-		padding: 37px 0px 110px 0px;
+		padding: 37px 0 30px 0px;
 	}
 
 }
@@ -533,7 +530,6 @@
 		max-width: 700px;
 		max-height: 250px;
 		gap: 10px;
-		border-radius: 60px;
 	}
 	.count {
 		font-size: 35px;
@@ -563,33 +559,17 @@
 	.logoSmal {
 		height: 50px;
 	}
-	.header {
-		padding-bottom: 90px;
-	}
-	.info {
-		padding: 37px 0 130px 0px;
-	}
+
 	.forMedia {
 		display: none;
-	}
-	.info p {
-		font-size: 14px;
 	}
 	.cardBtn button {
 		padding: 12px 26px;
 		font-size: 12px;
 		height: 50px;
-		width: 150px;
 		white-space: nowrap;
 	}
 	.cardBtn img {
 		width: 30px;
-	}
-	.info {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: fit-content;
-		padding: 37px 0px 110px 0px;
 	}
 }
