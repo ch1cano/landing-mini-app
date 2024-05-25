@@ -31,7 +31,6 @@ export const CoinBlock = () => {
     return (
         <div className={s.wrapper}>
             <div className={s.info}>
-                <p>HOW IT WORKS</p>
                 <p>X</p>
                 <p>TG</p>
             </div>
@@ -57,8 +56,7 @@ export const CoinBlock = () => {
                     </div>
 
                     <div className={s.cardItem}>
-                        The coin with the ticker of the top 3 letters will be listed and
-                        airdropped to XYZ token holders.
+                        The coin with the ticker of the top 3 letters will be listed and airdropped to  XYZ token holders.
                     </div>
                     <div className={s.cardBtn}>
                         <button>

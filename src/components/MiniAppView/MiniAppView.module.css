@@ -5,7 +5,6 @@
   flex-direction: column;
   width: 100%;
   background-color: black;
-  padding-top: 80px;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
@@ -18,8 +17,6 @@
   color: #fff;
   margin-top: 108px;
 }
-
-
 
 .title span {
   background: linear-gradient(45deg, #00f0ff, #00ff75);
@@ -105,16 +102,13 @@
   aspect-ratio: 1280 / 583;
 }
 
-
-.container{
+.container {
   max-width: 1400px;
   position: relative;
   width: 100%;
 }
 
-
 @media (max-width: 1000px) {
-
   .shodow::before,
   .bgCloud::after {
     content: none;
@@ -164,51 +158,51 @@
   }
 }
 
-
 @media (max-width: 1200px) {
-  .title{
+  .title {
     font-size: 32px;
     margin-top: 0;
   }
-  .wrapper{
+  .wrapper {
     padding: 20px;
   }
-  .phoneBlock{
+  .phoneBlock {
     padding-top: 30px;
   }
-  .shodow{
+  .shodow {
     padding-bottom: 0;
   }
-  .shadowBg{
+  .shadowBg {
     width: 100%;
   }
 }
 
-
-
 @media (max-width: 700px) {
-  .title{
+  .title {
     font-size: 18px;
     text-align: start;
   }
 
-  .letters_img{
+  .letters_img {
     height: 30px;
     width: auto;
   }
 
-  .phone{
+  .phone {
     width: 100%;
   }
 
-  .starBlack, .starBlack2, .starBlack3, .starBlack4 {
+  .starBlack,
+  .starBlack2,
+  .starBlack3,
+  .starBlack4 {
     display: none;
   }
-  .shadowBg{
+  .shadowBg {
     width: 200%;
   }
 
-  .letters{
+  .letters {
     padding-top: 20px;
   }
 }
