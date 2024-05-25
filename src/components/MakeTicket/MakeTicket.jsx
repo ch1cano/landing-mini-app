@@ -9,6 +9,7 @@ import avatars from "../../assets/avatars.png";
 import hop from "../../assets/hop.png";
 import hrt from "../../assets/hrt.png";
 import obm from "../../assets/obm.png";
+import why from "../../assets/why.png";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -39,10 +40,19 @@ const SLIDE_MOCK = [
     },
     {
         id: 3,
-        letters: obm,
+        letters: why,
         title: "WHY Coin.",
         subTitle: "We also know what",
         description: "We ask the big questions and make the big decisions. Join WHY Coin and shape the future with your vote.",
+        avatars: avatars,
+        count: "3333"
+    },
+    {
+        id: 4,
+        letters: obm,
+        title: "Obamium.",
+        subTitle: "We love Barack",
+        description: "Love Barack? So do we. Yes We Can make it to the top.",
         avatars: avatars,
         count: "3333"
     }
