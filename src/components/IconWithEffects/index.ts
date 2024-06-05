@@ -1,0 +1,1 @@
+export { IconWithEffects } from './IconWithEffects'

@@ -1,0 +1,47 @@
+.item {
+    font-size: 44px;
+    color: #FFFFFF52;
+    transition: all .3s;
+    display: block;
+    text-transform: uppercase;
+    width: 30px;
+}
+
+.wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    position: relative;
+}
+
+.track {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+    transition: all .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.active {
+    color: green;
+    width: 84px;
+    font-size: 100px;
+}
+
+.prev {
+    width: 62px;
+    font-size: 64px;
+}
+
+.next {
+    width: 62px;
+    font-size: 64px;
+}

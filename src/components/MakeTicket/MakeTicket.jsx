@@ -70,8 +70,8 @@ export const MakeTicket = () => {
                 <h2 className={s.titleBlock}>Make Your Ticker Win</h2>
             </ScrollAnimation>
             <div className={s.cards}>
-                <Swiper wrapperClass={s.sliderWrapper} slidesPerView={1} ref={swiperRef} centeredSlides={true} style={{ padding: '20px' }} spaceBetween={20} autoHeight>
-                    <SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }} key={1}>
+                <Swiper centeredSlides centeredSlidesBounds wrapperClass={s.sliderWrapper} slidesPerView={'auto'} ref={swiperRef} style={{ padding: '20px' }} spaceBetween={20}>
+                    <SwiperSlide className={s.slide} style={{ height: 'unset' }}>
                         <div className={s.card}>
                             <div className={s.cardHeader}>
                                 <img src={question} className={s.question} alt="???" />
@@ -85,7 +85,7 @@ export const MakeTicket = () => {
                         </div>
                     </SwiperSlide>
                     {SLIDE_MOCK.map((slide) =>
-                        <SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+                        <SwiperSlide className={s.slide} style={{ height: 'unset' }}
                             key={slide.id}>
                             <div className={s.cardSlide}>
                                 <div className={s.lettersBlock}>
@@ -105,7 +105,7 @@ export const MakeTicket = () => {
                             </div>
                         </SwiperSlide>
                     )}
-                    <SwiperSlide style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <SwiperSlide className={s.slide} style={{ height: 'unset' }}>
                         <div className={s.cardSlideEnd}>
                             <span>Think you`ve got a better idea of what this coin could be?</span>
                             <span>Get a team boost in the app and see your idea featured in this section. </span>

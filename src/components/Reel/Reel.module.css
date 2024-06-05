@@ -1,0 +1,36 @@
+.wrapper {
+    width: 96px;
+    height: 96px;
+    background: url("../../assets/letters-bg.png") no-repeat;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    border-radius: 16px;
+}
+
+.scroller__item {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #00f0ff, #00ff75);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.scroller {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 20px;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-property: transform;
+    transition-duration: 2s;
+}

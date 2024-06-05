@@ -1,10 +1,10 @@
 import "./App.css";
-import {CoinBlock} from "./components/CoinBlock/CoinBlock";
-import {Home} from "./components/Home/Home";
-import {MakeTicket} from "./components/MakeTicket/MakeTicket";
-import {MiniAppView} from "./components/MiniAppView/MiniAppView";
-import {PlayNow} from "./components/PlayNow/PlayNow";
-import {useLayoutEffect} from "react";
+import { CoinBlock } from "./components/CoinBlock/CoinBlock";
+import { Home } from "./components/Home/Home";
+import { MakeTicket } from "./components/MakeTicket/MakeTicket";
+import { MiniAppView } from "./components/MiniAppView/MiniAppView";
+import { PlayNow } from "./components/PlayNow/PlayNow";
+import { useLayoutEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -17,7 +17,7 @@ function App() {
             mirror: true,
             once: false,
         })
-        const config = {childList: true};
+        const config = { childList: true };
 
         const callback = function (mutationsList) {
             for (let mutation of mutationsList) {
@@ -33,11 +33,11 @@ function App() {
 
     return (
         <>
-            <CoinBlock/>
-            <MakeTicket/>
-            <PlayNow/>
-            <MiniAppView/>
-            <Home/>
+            <CoinBlock />
+            <MakeTicket />
+            <PlayNow />
+            <MiniAppView />
+            <Home />
         </>
     );
 }
