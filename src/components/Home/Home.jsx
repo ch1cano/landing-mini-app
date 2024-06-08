@@ -8,15 +8,15 @@ import bot from "../../assets/botCard.svg";
 import click from "../../assets/cloudclick.png";
 import cloudLeft from "../../assets/cloudLeft.svg";
 import cloudRight from "../../assets/cloudRight.svg";
-import {useEffect, useRef, useState} from "react";
-import {ScrollAnimation} from "../ScrollAnimation/ScrollAnimation.jsx";
+import { useEffect, useRef, useState } from "react";
+import { ScrollAnimation } from "../ScrollAnimation/ScrollAnimation.jsx";
 
 export const Home = () => {
     const [letters, setLetters] = useState(["?", "?", "?"]);
     const [alphabet, setAlphabet] = useState(
         "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
     );
-    const rocketRef = useRef(null)
+    const rocketRef = useRef(null);
 
     const changeLetter = (index) => {
         setLetters((prevLetters) => {
@@ -32,63 +32,61 @@ export const Home = () => {
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries, observer) => {
-            console.log(entries[0].isIntersecting)
+            console.log(entries[0].isIntersecting);
             if (entries[0].isIntersecting) {
-                entries[0].target.classList.add(s.active)
+                entries[0].target.classList.add(s.active);
             }
-        })
+        });
 
-        observer.observe(rocketRef.current)
+        observer.observe(rocketRef.current);
 
         return () => {
-            observer.unobserve(rocketRef.current)
-            observer.disconnect()
-        }
+            observer.unobserve(rocketRef.current);
+            observer.disconnect();
+        };
     }, []);
 
     return (
         <div className={s.wrapper}>
             <h1 className={s.title}>
-                From A to Z, your ticker to the moon lies
-                <br/> within these 26 letters of the alphabet.
-                <br/>
-                <span>Only 3 letters will win.</span>
+                In a world where every phenomenon has its coin,
+                <span> it&apos;s time for the community to decide what should come next.</span>
             </h1>
-            <img className={s.cloudLeft} src={cloudLeft} data-aos="fade-right" alt="group"/>
-            <img className={s.cloudRight} data-aos="fade-left" src={cloudRight} alt="group"/>
+            <img className={s.cloudLeft} src={cloudLeft} data-aos="fade-right" alt="group" />
+            <img className={s.cloudRight} data-aos="fade-left" src={cloudRight} alt="group" />
             <ScrollAnimation className={s.wrapper} animation="fadeBottom">
                 <div className={s.questionWrap}>
                     {letters.map((letter, index) => (
                         <div className={s.card} key={index}>
-                            <img className={s.top} src={top} alt=""/>
+                            <img className={s.top} src={top} alt="" />
                             <p className={s.count} onClick={() => changeLetter(index)}>
                                 {letter}
                             </p>
-                            <img className={s.bot} src={bot} alt=""/>
+                            <img className={s.bot} src={bot} alt="" />
                         </div>
                     ))}
-                    <img className={s.cloudClick} src={click} alt="group"/>
+                    <img className={s.cloudClick} src={click} alt="group" />
                 </div>
                 <div className={s.bg}>
-                    <img src={bg} alt="group" height={293}/>
+                    <img src={bg} alt="group" height={293} />
                 </div>
                 <div className={s.playNowWrap}>
                     <div className={s.playNowBlock}>
-                        <span className={s.playNowTitle}>The Coin That Must Be Named</span>
-                        <img src={group} alt="group" height={270}/>
+                        <div className={s.playNowTitle}>The <span>Coin</span> That Must Be <span>Named</span></div>
+                        <img src={group} alt="group" height={270} />
                         <button className={s.playNowButton}>Play Now</button>
                     </div>
                 </div>
             </ScrollAnimation>
             <div className={s.rocket} ref={rocketRef}>
-                <img src={Rocket} alt="rocket"/>
+                <img src={Rocket} alt="rocket" />
             </div>
             <div className={s.info}>
-                <img src={x} alt="x"/>
+                <img src={x} alt="x" />
                 <div className={s.infoText}>
                     <p>HOW IT WORKS</p>
-                    <p>X</p>
-                    <p>TG</p>
+                    <span>X</span>
+                    <span>TG</span>
                 </div>
             </div>
         </div>

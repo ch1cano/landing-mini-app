@@ -9,6 +9,8 @@ import avatars from "../../assets/avatars.png";
 import hop from "../../assets/hop.png";
 import hrt from "../../assets/hrt.png";
 import obm from "../../assets/obm.png";
+import why from "../../assets/why.png";
+import lettersEnd from "../../assets/lettest-end.png";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -39,12 +41,21 @@ const SLIDE_MOCK = [
     },
     {
         id: 3,
-        letters: obm,
+        letters: why,
         title: "WHY Coin.",
         subTitle: "We also know what",
         description: "We ask the big questions and make the big decisions. Join WHY Coin and shape the future with your vote.",
         avatars: avatars,
         count: "3333"
+    },
+    {
+        id: 4,
+        letters: obm,
+        title: "Obamium.",
+        subTitle: "We love Barack",
+        description: "Love Barack? So do we. Yes We Can make it to the top.",
+        avatars: avatars,
+        count: "639"
     }
 ];
 
@@ -67,7 +78,8 @@ export const MakeTicket = () => {
     return (
         <ScrollAnimation animation={"fade"} className={s.wrapper}>
             <ScrollAnimation animation="fadeTop">
-                <h2 className={s.titleBlock}>Make Your Ticker Win</h2>
+                <h2 className={s.titleBlock}>As you and your team vote for letters,<br />
+                    <span>you collect $XYZ</span></h2>
             </ScrollAnimation>
             <div className={s.cards}>
                 <Swiper centeredSlides centeredSlidesBounds wrapperClass={s.sliderWrapper} slidesPerView={'auto'} ref={swiperRef} style={{ padding: '20px' }} spaceBetween={20}>
@@ -77,7 +89,7 @@ export const MakeTicket = () => {
                                 <img src={question} className={s.question} alt="???" />
                             </div>
                             <div className={s.cardItem}>
-                                Create a team around your idea, and make it to the top
+                                $XYZ – meta-creative community in crypto
                             </div>
                             <div className={s.cardBtn}>
                                 <button>Create a Team</button>
@@ -92,7 +104,7 @@ export const MakeTicket = () => {
                                     <img src={slide.letters} className={s.letters} alt='letters' />
                                 </div>
                                 <div className={s.textBlock}>
-                                    <span className={s.title}>{slide.title}<br />{slide.subTitle}</span>
+                                    <span className={s.title}>{slide.title}<h3>{slide.subTitle}</h3></span>
                                     <span className={s.description}>{slide.description}</span>
                                 </div>
                                 <div className={s.bottomBlock}>
@@ -107,8 +119,11 @@ export const MakeTicket = () => {
                     )}
                     <SwiperSlide className={s.slide} style={{ height: 'unset' }}>
                         <div className={s.cardSlideEnd}>
-                            <span>Think you`ve got a better idea of what this coin could be?</span>
-                            <span>Get a team boost in the app and see your idea featured in this section. </span>
+                            <div className={s.lettersBlock}>
+                                <img src={lettersEnd} className={s.lettersEnd} alt='letters' />
+                            </div>
+                            <span>Think you&apos;ve got a better idea <br />of what this coin could be?</span>
+                            <div className={s.smallDesc}>Get a team boost in the app and see your idea featured in this section. </div>
                             <div className={s.btnBlock}>
                                 <button className={s.createBtn}>Create a team</button>
                             </div>

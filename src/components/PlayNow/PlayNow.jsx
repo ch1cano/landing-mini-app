@@ -1,7 +1,6 @@
 import s from "./PlayNow.module.css";
 import tap from "../../assets/tapPlus.png";
 import x from "../../assets/x.png";
-import question from "../../assets/question.png";
 import abc from "../../assets/abc.png";
 import starBlue from "../../assets/blueStar.svg";
 import starGreen from "../../assets/greenStar.svg";
@@ -9,14 +8,11 @@ import starAzure from "../../assets/azure-star.svg";
 import classNames from "classnames";
 import { ScrollAnimation } from "../ScrollAnimation/ScrollAnimation.jsx";
 import { Reel } from "../Reel/Reel";
-import { useState } from "react";
-import { useEffect } from "react";
-import { AnimatePresence, motion } from 'framer-motion'
 import { IconWithEffects } from "../IconWithEffects/IconWithEffects";
 
 function shuffle(array) {
     let currentIndex = array.length;
-    const copy = JSON.parse(JSON.stringify(array))
+    const copy = JSON.parse(JSON.stringify(array));
     // While there remain elements to shuffle...
     while (currentIndex != 0) {
 
@@ -28,22 +24,22 @@ function shuffle(array) {
         [copy[currentIndex], copy[randomIndex]] = [
             copy[randomIndex], copy[currentIndex]];
     }
-    return copy
+    return copy;
 }
 
-const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 const items = Array.from({ length: 50 }).map(item => ({
     title: letters[Math.floor(Math.random() * letters.length)],
     isTarget: false
-}))
+}));
 
 export const PlayNow = () => {
 
     return (
         <div className={s.wrapper}>
             <ScrollAnimation animation={"fadeBottom"} delay={'200ms'}>
-                <h1 className={s.title}>Play. Name. Claim.</h1>
+                <div className={s.title}>The movement begins with a single letter.<br /> <span>Start your team and see the vibes spreading like a wildfire.</span></div>
             </ScrollAnimation>
             <div className={s.cardsBlock}>
                 <ScrollAnimation animation={"fadeLeft"} className={s.card}>
@@ -63,8 +59,7 @@ export const PlayNow = () => {
                         </div>
                     </div>
                     <span className={s.description}>
-                        Push it to the top of the
-                        <br /> leaderboard
+                        Boost it to the top
                     </span>
                 </ScrollAnimation>
                 <ScrollAnimation animation={"fadeLeft"} delay={"600ms"} className={s.card}>
@@ -75,8 +70,8 @@ export const PlayNow = () => {
                         <Reel items={[...shuffle(items), { title: 'z', isTarget: true }]} duration={5000} letterColor="#9747FF" />
                     </div>
                     <span className={s.description}>
-                        Define the crypto you
-                        <br /> will hold
+                        Name and claim the<br />
+                        new token
                     </span>
                 </ScrollAnimation>
             </div>

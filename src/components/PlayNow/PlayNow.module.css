@@ -1,243 +1,250 @@
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	background-color: black;
-	padding-bottom: 242.1px;
-	padding-top: 100px;
-	position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  padding-bottom: 242.1px;
+  padding-top: 100px;
+  position: relative;
 }
 
 .title {
-	font-size: 56px;
-	font-weight: 600;
-	color: #fff;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 600;
+  color: #fff;
 }
 
+.title span {
+  background: linear-gradient(45deg, #00f0ff, #00ff75);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .cardsBlock {
-	width: 100%;
-	padding: 80px 80px 44px 80px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 40px;
+  width: 100%;
+  padding: 80px 80px 44px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 .card {
-	background-color: #212121;
-	height: 100%;
-	min-height: 580px;
-	max-width: 400px;
-	width: 100%;
-	border-radius: 1000px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 0 10px;
+  background-color: #212121;
+  height: 100%;
+  min-height: 580px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
 }
 
 .cardTitle {
-	font-size: 56px;
-	font-weight: 600;
-	color: #fff;
+  font-size: 56px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .content {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 300px;
-	gap: 10px;
-	position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  gap: 10px;
+  position: relative;
 }
 
 .tap {
-	position: relative;
-	padding-left: 40px;
-	padding-top: 40px;
+  position: relative;
+  padding-left: 40px;
+  padding-top: 40px;
 }
 
 .description {
-	font-size: 24px;
-	font-weight: 400;
-	color: #fff;
-	text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
 }
 
 .button {
-	width: 184px;
-	height: 72px;
-	background-color: #00ff75;
-	border-radius: 100px;
-	font-size: 24px;
-	font-weight: 600;
-	border: none;
-	cursor: pointer;
+  width: 184px;
+  height: 72px;
+  background-color: #00ff75;
+  border-radius: 100px;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
 }
 
 .blueStar {
-	position: absolute;
-	top: 10%;
-	right: 3%;
+  position: absolute;
+  top: 10%;
+  right: 3%;
 }
 
 .greenStar {
-	position: absolute;
-	top: 15%;
-	left: 50px;
+  position: absolute;
+  top: 15%;
+  left: 50px;
 }
 
 .greenStar2 {
-	position: absolute;
-	bottom: 20%;
-	left: 10%;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
 }
 
 .blueStar2 {
-	position: absolute;
-	bottom: 20%;
-	right: 10%;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
 }
 
 .starAzure {
-	position: absolute;
-	bottom: 5%;
-	right: 30%;
+  position: absolute;
+  bottom: 5%;
+  right: 30%;
 }
 
 .starAzure2 {
-	position: absolute;
-	bottom: 15%;
-	right: 25%;
+  position: absolute;
+  bottom: 15%;
+  right: 25%;
 }
 
 .starAzure3 {
-	position: absolute;
-	bottom: 10%;
-	right: 5%;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
 }
 
 .cardsBlock {
-	width: 100%;
-	padding: 80px 80px 44px 80px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 40px;
+  width: 100%;
+  padding: 80px 80px 44px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 @media (max-width: 1300px) {
-	.card img {
-		max-width: 100%;
-	}
+  .card img {
+    max-width: 100%;
+  }
 
-	.card {
-		min-height: 520px;
-	}
+  .card {
+    min-height: 520px;
+  }
 }
 
 @media (max-width: 1024px) {
-	.wrapper {
-		padding: 40px;
-	}
+  .wrapper {
+    padding: 40px;
+  }
 
-	.cardsBlock {
-		width: 100%;
-		padding: 80px 80px 44px 80px;
-		display: flex;
-		flex-direction: column;
-	}
+  .cardsBlock {
+    width: 100%;
+    padding: 80px 80px 44px 80px;
+    display: flex;
+    flex-direction: column;
+  }
 
-	.card {
-		min-height: 580px;
-	}
+  .card {
+    min-height: 580px;
+  }
 
-	.starAzure2 {
-		position: absolute;
-		bottom: 15%;
-		right: 15%;
-	}
+  .starAzure2 {
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+  }
 
-	.title {
-		font-size: 35px;
-	}
+  .title {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 768px) {
-	.wrapper {
-		padding: 40px 20px;
-	}
+  .wrapper {
+    padding: 40px 20px;
+  }
 
-	.cardsBlock {
-		width: 100%;
-		padding: 40px 0px;
-		display: flex;
-		flex-direction: column;
-	}
+  .cardsBlock {
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+  }
 
-	.card {
-		min-height: 430px;
-		border-radius: 32px;
-	}
+  .card {
+    min-height: 430px;
+    border-radius: 32px;
+  }
 
-	.wrapperStars {
-		display: none;
-	}
+  .wrapperStars {
+    display: none;
+  }
 
-	.content {
-		height: 250px;
-	}
+  .content {
+    height: 250px;
+  }
 
-	.title {
-		font-size: 30px;
-	}
+  .title {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 580px) {
-	.title {
-		font-size: 28px;
-	}
+  .title {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 425px) {
-	.title {
-		font-size: 26px;
-	}
+  .title {
+    font-size: 26px;
+  }
 }
 
 .tap {
-	animation: tap .3s linear infinite forwards;
+  animation: tap 0.3s linear infinite forwards;
 }
 
 .bubble {
-	animation: bubble .4s linear forwards;
+  animation: bubble 0.4s linear forwards;
 }
 
 @keyframes bubble {
-	0% {
-		translate: 0 50px;
-		opacity: 1;
-	}
+  0% {
+    translate: 0 50px;
+    opacity: 1;
+  }
 
-	100% {
-		translate: 0 0px;
-		opacity: 0;
-	}
+  100% {
+    translate: 0 0px;
+    opacity: 0;
+  }
 }
 
 @keyframes tap {
-	0% {
-		transform: scale(1);
-	}
+  0% {
+    transform: scale(1);
+  }
 
-	50% {
-		transform: scale(0.95);
-	}
+  50% {
+    transform: scale(0.95);
+  }
 
-	100% {
-		transform: scale(1);
-	}
+  100% {
+    transform: scale(1);
+  }
 }

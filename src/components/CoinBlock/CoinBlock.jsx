@@ -2,7 +2,6 @@ import s from "./CoinBlock.module.css";
 import big from "../../assets/bigLogo.png";
 import small from "../../assets/smallLogo.png";
 import bg from "../../assets/bg.png";
-import cube from "../../assets/cube.png";
 import top from "../../assets/topCard.svg";
 import bot from "../../assets/botCard.svg";
 import star from "../../assets/greenStar.svg";
@@ -32,8 +31,8 @@ export const CoinBlock = () => {
         <div className={s.wrapper}>
             <div className={s.info}>
                 <p>HOW IT WORKS</p>
-                <p>X</p>
-                <p>TG</p>
+                <span>X</span>
+                <span>TG</span>
             </div>
             <ScrollAnimation className={s.wrapper} animation="fadeBottom" delay="500ms">
                 <div className={s.header}>
@@ -57,13 +56,12 @@ export const CoinBlock = () => {
                     </div>
 
                     <div className={s.cardItem}>
-                        The coin with the ticker of the top 3 letters will be listed and
-                        airdropped to XYZ token holders.
+                        The @namelesscoin will be airdropped to the winners and $XYZ holders when the letter competition is finished.
+
                     </div>
                     <div className={s.cardBtn}>
                         <button>
-                            <img src={cube} alt="cube" />
-                            BUY $??? (SOON)
+                            Enter the Game
                         </button>
                     </div>
                     <div className={s.forMedia}>
