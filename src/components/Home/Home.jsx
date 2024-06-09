@@ -17,6 +17,7 @@ export const Home = () => {
         "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
     );
     const rocketRef = useRef(null);
+    const wrapperRef = useRef(null)
 
     const changeLetter = (index) => {
         setLetters((prevLetters) => {
@@ -31,6 +32,10 @@ export const Home = () => {
     };
 
     useEffect(() => {
+        setTimeout(() => {
+            wrapperRef.current?.scrollIntoView()
+        }, 10)
+       
         const observer = new IntersectionObserver((entries, observer) => {
             console.log(entries[0].isIntersecting);
             if (entries[0].isIntersecting) {
@@ -47,7 +52,7 @@ export const Home = () => {
     }, []);
 
     return (
-        <div className={s.wrapper}>
+        <div className={s.wrapper} >
             <h1 className={s.title}>
                 In a world where every phenomenon has its coin,
                 <span> it&apos;s time for the community to decide what should come next.</span>
@@ -83,7 +88,7 @@ export const Home = () => {
             </div>
             <div className={s.info}>
                 <img src={x} alt="x" />
-                <div className={s.infoText}>
+                <div className={s.infoText} ref={wrapperRef}>
                     <p>HOW IT WORKS</p>
                     <span>X</span>
                     <span>TG</span>

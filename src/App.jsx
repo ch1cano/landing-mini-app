@@ -4,19 +4,12 @@ import { Home } from "./components/Home/Home";
 import { MakeTicket } from "./components/MakeTicket/MakeTicket";
 import { MiniAppView } from "./components/MiniAppView/MiniAppView";
 import { PlayNow } from "./components/PlayNow/PlayNow";
-import { useLayoutEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
 
-    useLayoutEffect(() => {
-        Aos.init({
-            duration: 1000,
-            debounceDelay: 50,
-            mirror: true,
-            once: false,
-        })
+    useEffect(() => {
+        
         const config = { childList: true };
 
         const callback = function (mutationsList) {
